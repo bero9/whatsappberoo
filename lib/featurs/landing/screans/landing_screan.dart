@@ -1,14 +1,18 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:whatsappclone/colors.dart';
+import 'package:whatsappclone/featurs/auth/repository/screens/login_screen.dart';
 
 import '../../../common/widgets/custom_button.dart';
 class landinScreean extends StatelessWidget {
   const landinScreean({super.key});
-
+void navigateTologinScreen(BuildContext context){
+  Navigator.pushNamed(context, LoginScreen.routName);
+}
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
+
     return  Scaffold(
       body: SafeArea(
         child: Center(
@@ -32,7 +36,10 @@ class landinScreean extends StatelessWidget {
                 textAlign: TextAlign.center,),
               ),
               const SizedBox(height: 10,),
-              CustomButton(text: "Agree And Continue", onPressed: (){})
+              SizedBox(
+                width: size.width*0.75,
+                child: CustomButton(text: "Agree And Continue", onPressed: ()=>navigateTologinScreen(context)),
+              )
             ],
           ),
         ),
