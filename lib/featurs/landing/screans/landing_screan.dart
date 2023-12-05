@@ -20,10 +20,10 @@ void navigateTologinScreen(BuildContext context){
             // crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               const SizedBox(height: 50,),
-              const Text("Welcome To  WhatsApp",style: TextStyle(
+              const Text("Welcome To BeroWhatsApp",style: TextStyle(
                 fontSize: 28,
                 fontWeight: FontWeight.w600,
-        
+
               ),),
                SizedBox(height:size.height/9),
               Image.asset("assets/bg.png",height: 340,width: 340,color: tabColor,),
